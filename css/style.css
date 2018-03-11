@@ -78,6 +78,72 @@ section{
 	height:56px;
 	background:url(../images/sep.png) no-repeat center center;	
 }
+
+
+
+.bearr-countdown-item {
+  display: block;
+  width: 100%;
+  max-width: 690px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+@media (min-width: 768px) {
+  .bearr-countdown-item {
+    flex-wrap: nowrap;
+    display: flex;
+  }
+}
+.bearr-countdown-item .countdown-col {
+  border: 2px solid #ffffff;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  width: 110px;
+  height: 110px;
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.12);
+  padding-top: 28px;
+  margin: 15px;
+  text-align: center;
+  display: inline-block;
+}
+@media (min-width: 768px) {
+  .bearr-countdown-item .countdown-col {
+    width: 150px;
+    height: 150px;
+    padding-top: 35px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .bearr-countdown-item .countdown-col:first-child {
+    margin-left: 0;
+  }
+}
+.bearr-countdown-item .countdown-col .countdown-time {
+  font-size: 35px;
+  line-height: 1;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+}
+@media (min-width: 768px) {
+  .bearr-countdown-item .countdown-col .countdown-time {
+    font-size: 48px;
+    margin-bottom: 5px;
+  }
+}
+.bearr-countdown-item .countdown-col .countdown-type {
+  font-size: 16px;
+}
+@media (min-width: 768px) {
+  .bearr-countdown-item .countdown-col .countdown-type {
+    font-size: 18px;
+  }
+}
+
+
+
 ::selection {
 	background: #ef6a8a; /* Safari */
 	color:#FFF;
